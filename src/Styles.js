@@ -13,29 +13,32 @@ export const styles = StyleSheet.create({
     height: windowHeight,
   },
   button: {
+    height: 75,
+    width: 250,
+    borderRadius: 40,
+    justifyContent: "center",
+    alignItems: "center",
     login: {
       backgroundColor: "#EF5E66",
-      height: 75,
-      width: 250,
-      borderRadius: 40,
-      justifyContent: "center",
-      alignItems: "center",
     },
     signUp: {
       backgroundColor: "#61C7E8",
-      height: 75,
-      width: 250,
-      borderRadius: 40,
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: 50
+      marginTop: 30,
     },
   },
   container: {
     flex: 1,
     alignItems: "center",
+    justifyContent: "space-evenly",
+  },
+  containerSmall: {
+    height: 100,
+    alignItems: "center",
     justifyContent: "space-around",
-    backgroundColor: "orange",
+  },
+  form: {
+    alignItems: "center",
+    // backgroundColor: "red",
   },
   logo: {
     small: {
@@ -50,5 +53,13 @@ export const styles = StyleSheet.create({
       width: windowWidth * 0.85,
       height: windowWidth * 0.85,
     },
+  },
+  textInput: {
+    height: 45,
+    width: windowWidth * 0.8,
+    backgroundColor: "#fff",
+    borderRadius: 40,
+    paddingLeft: 20,
+    marginBottom: 30
   },
 });

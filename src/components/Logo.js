@@ -1,6 +1,6 @@
-import { Image, View } from "react-native";
+import { Image } from "react-native";
 
 
 export const Logo = (props) => {
-  return <Image style={props.styles} source={require("../../assets/logo.png")} />;
+  return <Image style={props.size} source={require("../../assets/logo.png")} />;
 };
