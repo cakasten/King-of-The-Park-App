@@ -1,14 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
-import { useRef } from "react";
-import {
-  KeyboardAvoidingView,
-  TextInput,
-  Pressable,
-  Text,
-  TouchableWithoutFeedback,
-  Keyboard,
-  View,
-} from "react-native";
+import { useRef, useState } from "react";
+import { TextInput, Pressable, Text, View } from "react-native";
 import { styles } from "./styles";
 import { IntroButton } from "../buttons/IntroButton";
 
@@ -16,6 +8,15 @@ export const LoginForm = () => {
   const navigation = useNavigation();
   const email = useRef();
   const password = useRef();
+  const [loggedIn, setLoggedIn] = useState(false);
+
+
+// Fake login function
+  const handleSubmit = () => {
+    loggedIn ? navigation.navigate("Main") : alert('You are not logged in.');
+    setLoggedIn(!loggedIn);
+  }
+
   return (
     <View style={styles}>
       <TextInput
@@ -32,7 +33,7 @@ export const LoginForm = () => {
         style={styles.textInput}
         ref={password}
       />
-      <IntroButton type="Login" onPress={() => alert("Make feed page!")} />
+      <IntroButton type="Login" onPress={() => handleSubmit()} />
 
       <Pressable
         style={styles.link}
