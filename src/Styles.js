@@ -12,33 +12,14 @@ export const styles = StyleSheet.create({
     top: 0,
     height: windowHeight,
   },
-  button: {
-    height: 75,
-    width: 250,
-    borderRadius: 40,
-    justifyContent: "center",
-    alignItems: "center",
-    login: {
-      backgroundColor: "#EF5E66",
-    },
-    signUp: {
-      backgroundColor: "#61C7E8",
-      marginTop: 30,
-    },
-  },
   container: {
     flex: 1,
     alignItems: "center",
     justifyContent: "space-evenly",
   },
   containerSmall: {
-    height: 100,
     alignItems: "center",
     justifyContent: "space-around",
-  },
-  form: {
-    alignItems: "center",
-    // backgroundColor: "red",
   },
   logo: {
     small: {
@@ -55,11 +36,11 @@ export const styles = StyleSheet.create({
     },
   },
   textInput: {
-    height: 45,
-    width: windowWidth * 0.8,
+    height: 30,
+    width: 250,
     backgroundColor: "#fff",
     borderRadius: 40,
     paddingLeft: 20,
-    marginBottom: 30
+    marginBottom: 15,
   },
 });
