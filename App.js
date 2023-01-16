@@ -7,11 +7,18 @@ import { Login } from "./src/screens/Login";
 import { SignUp } from "./src/screens/SignUp";
 import { ForgotPassword } from "./src/screens/ForgotPassword";
 import { Main } from "./src/screens/Main";
+import { useState } from "react";
 
 const Stack = createStackNavigator();
 
 export default function App() {
-  return (
+  const [login, setLogin] = useState(false);
+
+  return login ? (
+    <NavigationContainer style={styles.container}>
+      <Main />
+    </NavigationContainer>
+  ) : (
     <NavigationContainer style={styles.container}>
       <Stack.Navigator
         screenOptions={{
@@ -19,10 +26,12 @@ export default function App() {
         }}
       >
         <Stack.Screen name="Intro" component={Intro} />
-        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen
+          name="Login"
+          children={(props) => <Login setLogin={setLogin} />}
+        />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
-        <Stack.Screen name="Main" component={Main} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -5,12 +5,12 @@ import { LoginForm } from "../components/loginForm/LoginForm";
 import { Logo } from "../components/Logo";
 import { styles } from "../Styles";
 
-export const Login = ({ navigation }) => {
+export const Login = ({ setLogin }) => {
   return (
     <View style={styles.container}>
       <Gradient />
       <Logo size={styles.logo.large} />
-      <LoginForm />
+      <LoginForm setLogin={setLogin} />
     </View>
   );
 };

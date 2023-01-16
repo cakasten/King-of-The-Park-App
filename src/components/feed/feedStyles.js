@@ -17,11 +17,8 @@ export const feedStyles = {
     padding: 5,
     flexDirection: "row",
   },
-  thing: {
-    width: 55,
-    height: 55,
-    marginRight: 20,
-    backgroundColor: "blue",
+  topButton: {
+    marginRight: 30,
   },
   mainContent: {
     height: 1000,

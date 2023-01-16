@@ -1,21 +1,18 @@
 import { useNavigation } from "@react-navigation/native";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { TextInput, Pressable, Text, View } from "react-native";
 import { styles } from "./styles";
 import { IntroButton } from "../buttons/IntroButton";
 
-export const LoginForm = () => {
+export const LoginForm = ({ setLogin }) => {
   const navigation = useNavigation();
   const email = useRef();
   const password = useRef();
-  const [loggedIn, setLoggedIn] = useState(false);
 
-
-// Fake login function
+  // Fake login function
   const handleSubmit = () => {
-    loggedIn ? navigation.navigate("Main") : alert('You are not logged in.');
-    setLoggedIn(!loggedIn);
-  }
+    setLogin(true);
+  };
 
   return (
     <View style={styles}>
