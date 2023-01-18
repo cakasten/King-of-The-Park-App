@@ -1,8 +1,8 @@
 import { View } from "react-native";
-import { IntroButton } from "../components/buttons/IntroButton";
-import { Gradient } from "../components/Gradient";
-import { Logo } from "../components/Logo";
-import { styles } from "../Styles";
+import { IntroButton } from "../../components/buttons/IntroButton";
+import { Gradient } from "../../components/Gradient";
+import { Logo } from "../../components/Logo";
+import { styles } from "../../Styles";
 
 export const Intro = ({ navigation }) => {
   return (

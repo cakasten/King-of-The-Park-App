@@ -2,11 +2,11 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Intro } from "./src/screens/Intro";
-import { Login } from "./src/screens/Login";
-import { SignUp } from "./src/screens/SignUp";
-import { ForgotPassword } from "./src/screens/ForgotPassword";
-import { Main } from "./src/screens/Main";
+import { Intro } from "./src/screens/introScreens/Intro";
+import { Login } from "./src/screens/introScreens/Login";
+import { SignUp } from "./src/screens/introScreens/SignUp";
+import { ForgotPassword } from "./src/screens/introScreens/ForgotPassword";
+import { Main } from "./src/screens/mainScreens/Main";
 import { useState } from "react";
 
 const Stack = createStackNavigator();

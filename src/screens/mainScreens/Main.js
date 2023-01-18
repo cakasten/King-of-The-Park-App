@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { styles } from "../Styles";
-import { Login } from "./Login";
-import { Feed } from "../components/feed/Feed";
+import { styles } from "../../Styles";
+import { Login } from "../introScreens/Login";
+import { Feed } from "../../components/feed/Feed";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faCableCar } from "@fortawesome/free-solid-svg-icons";
 import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
@@ -14,10 +14,10 @@ const Tab = createBottomTabNavigator();
 export const Main = () => {
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
+      screenOptions={() => ({
+        tabBarIcon: () => {
           let iconName;
-          switch (route.name) {
+          switch (Tab.Screen) {
             case "Home":
               iconName = faCableCar;
             case "Groups":
@@ -29,7 +29,7 @@ export const Main = () => {
             default:
               iconName = faHouse;
           }
-          return <FontAwesomeIcon icon={iconName} />;
+          return <FontAwesomeIcon icon={iconName} size={27} />;
         },
         headerShown: false,
       })}
