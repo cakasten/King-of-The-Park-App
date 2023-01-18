@@ -2,12 +2,13 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { Tabs } from "./src/navigation/Tabs";
 import { Intro } from "./src/screens/introScreens/Intro";
 import { Login } from "./src/screens/introScreens/Login";
 import { SignUp } from "./src/screens/introScreens/SignUp";
 import { ForgotPassword } from "./src/screens/introScreens/ForgotPassword";
-import { Main } from "./src/screens/mainScreens/Main";
 import { useState } from "react";
+
 
 const Stack = createStackNavigator();
 
@@ -16,7 +17,7 @@ export default function App() {
 
   return login ? (
     <NavigationContainer style={styles.container}>
-      <Main />
+      <Tabs />
     </NavigationContainer>
   ) : (
     <NavigationContainer style={styles.container}>

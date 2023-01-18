@@ -1,5 +1,4 @@
 import { View } from "react-native";
-import { Logo } from "../Logo";
 import { topNavStyles } from './topNavStyles';
 import { styles } from "../../Styles";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
@@ -7,6 +6,7 @@ import { faSquarePlus } from "@fortawesome/free-regular-svg-icons";
 import { faBullseye } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import { Logo } from "../../components/Logo";
 
 export const TopNav = () => {
   return (

@@ -1,5 +1,5 @@
 import { View, Text, ScrollView } from "react-native";
-import { TopNav } from "../topNav/TopNav";
+import { TopNav } from "../../navigation/topNav/TopNav";
 import { feedStyles } from "./feedStyles";
 
 
