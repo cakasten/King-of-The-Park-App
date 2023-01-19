@@ -6,8 +6,8 @@ const windowWidth = Dimensions.get("window").width;
 export const styles = StyleSheet.create({
   logo: {
     small: {
-      width: windowWidth * 0.2,
-      height: windowWidth * 0.2,
+      width: windowWidth * 0.15,
+      height: windowWidth * 0.15,
     },
     medium: {
       width: windowWidth * 0.5,

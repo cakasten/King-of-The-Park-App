@@ -16,16 +16,16 @@ export const TopNav = () => {
           onPress={() => alert("Add Challenge")}
           style={styles.topButton}
         >
-          <FontAwesomeIcon icon={faSquarePlus} size={40} />
+          <FontAwesomeIcon icon={faSquarePlus} size={35} />
         </Pressable>
         <Pressable
           onPress={() => alert("Active Challenges")}
           style={styles.topButton}
         >
-          <FontAwesomeIcon icon={faBullseye} size={40} />
+          <FontAwesomeIcon icon={faBullseye} size={35} />
         </Pressable>
         <Pressable onPress={() => alert("Search")} style={styles.topButton}>
-          <FontAwesomeIcon icon={faMagnifyingGlass} size={40} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} size={35} />
         </Pressable>
       </View>
     </View>
