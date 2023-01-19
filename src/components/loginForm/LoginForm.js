@@ -30,7 +30,10 @@ export const LoginForm = ({ setLogin }) => {
         style={styles.textInput}
         ref={password}
       />
-      <IntroButton type="Login" onPress={() => handleSubmit()} />
+      <IntroButton
+        type="Login"
+        onPress={() => setTimeout(() => handleSubmit(), 1000)}
+      />
 
       <Pressable
         style={styles.link}

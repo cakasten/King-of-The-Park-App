@@ -1,16 +1,12 @@
 import { useNavigation } from "@react-navigation/native";
 import {
   TextInput,
-  ScrollView,
   View,
   Text,
   Pressable,
   KeyboardAvoidingView,
-  TouchableWithoutFeedback,
-  Keyboard,
 } from "react-native";
 import { styles } from "./styles";
-// import { styles } from "../../Styles";
 import { useRef } from "react";
 import { IntroButton } from "../buttons/IntroButton";
 

@@ -1,5 +1,5 @@
 import { View } from "react-native";
-import { Gradient } from "../../components/Gradient";
+import { Gradient } from "../../components/gradient/Gradient";
 import { Logo } from "../../components/logo/Logo";
 import { SignUpForm } from "../../components/signUpForm/SignUpForm";
 import { styles } from "../../Styles";

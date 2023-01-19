@@ -8,7 +8,7 @@ import { Login } from "./src/screens/introScreens/Login";
 import { SignUp } from "./src/screens/introScreens/SignUp";
 import { ForgotPassword } from "./src/screens/introScreens/ForgotPassword";
 import { useState } from "react";
-import { Gradient } from "./src/components/Gradient";
+import { Gradient } from "./src/components/gradient/Gradient";
 
 const Stack = createStackNavigator();
 

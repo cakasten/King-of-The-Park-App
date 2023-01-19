@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import { IntroButton } from "../../components/buttons/IntroButton";
-import { Gradient } from "../../components/Gradient";
+import { Gradient } from "../../components/gradient/Gradient";
 import { Logo } from "../../components/logo/Logo";
 import { styles } from "../../Styles";
 

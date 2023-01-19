@@ -1,5 +1,5 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { styles } from "../Styles";
+import { styles } from "./styles";
 
 export const Gradient = () => {
   return (
