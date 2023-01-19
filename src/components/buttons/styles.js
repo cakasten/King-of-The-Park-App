@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const styles = {
+export const styles = StyleSheet.create({
   height: 60,
   width: 240,
   borderRadius: 30,
@@ -16,4 +16,4 @@ export const styles = {
   submit: {
     backgroundColor: "#40D63D",
   },
-};
+});

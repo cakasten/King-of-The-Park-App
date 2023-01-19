@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const styles = {
+export const styles = StyleSheet.create({
   justifyContent: "center",
   alignItems: "center",
   textInput: {
@@ -14,4 +14,4 @@ export const styles = {
   link: {
     marginTop: 50
   }
-};
+});

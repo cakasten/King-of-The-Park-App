@@ -2,9 +2,8 @@ import { StyleSheet } from "react-native";
 import { Dimensions } from "react-native";
 
 const windowWidth = Dimensions.get("window").width;
-const windowHeight = Dimensions.get("window").height;
 
-export const topNavStyles = {
+export const topNavStyles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "start",
@@ -26,4 +25,4 @@ export const topNavStyles = {
     alignItems: "center",
     backgroundColor: '#7ea'
   },
-};
+});

@@ -17,7 +17,6 @@ export const ForgotPassword = () => {
     <View style={styles.container}>
       <Gradient />
       <Logo size={styles.logo.large} />
-
       <TextInput
         style={styles.textInput}
         placeholder="Email:"

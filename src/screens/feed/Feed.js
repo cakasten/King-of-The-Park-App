@@ -1,13 +1,13 @@
 import { View, Text, ScrollView } from "react-native";
 import { TopNav } from "../../navigation/topNav/TopNav";
-import { feedStyles } from "./feedStyles";
+import { styles } from "./styles";
 
 
 export const Feed = () => {
   return (
-    <View style={feedStyles.container}>
+    <View style={styles.container}>
       <TopNav />
-      <ScrollView contentContainerStyle={feedStyles.mainContent}>
+      <ScrollView contentContainerStyle={styles.mainContent}>
         <Text>Add ScrollView Content Here</Text>
       </ScrollView>
     </View>

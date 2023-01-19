@@ -4,11 +4,10 @@ import { Dimensions } from "react-native";
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
-export const feedStyles = {
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "start",
-    top: 35,
   },
   mainContent: {
     height: 1000,
@@ -16,4 +15,4 @@ export const feedStyles = {
     alignItems: "center",
     backgroundColor: '#7ea'
   },
-};
+});

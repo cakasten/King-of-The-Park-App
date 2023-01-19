@@ -12,14 +12,13 @@ export const styles = StyleSheet.create({
     top: 0,
     height: windowHeight,
   },
+  safeContainer: {
+    flex: 1,
+  },
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "space-evenly",
-  },
-  containerSmall: {
-    alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: 'space-evenly',
+    alignItems: 'center'
   },
   logo: {
     small: {
