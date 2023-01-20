@@ -6,7 +6,7 @@ import { styles } from "./styles";
 export const Feed = () => {
   return (
     <View style={styles.container}>
-      <TopNav />
+      <TopNav buttons={['addChallenge', 'activeChallenges', 'search']} />
       <ScrollView contentContainerStyle={styles.mainContent}>
         <Text>Add ScrollView Content Here</Text>
       </ScrollView>

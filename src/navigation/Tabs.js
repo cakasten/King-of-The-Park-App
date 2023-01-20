@@ -6,6 +6,7 @@ import { faMap } from "@fortawesome/free-regular-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { Feed } from "../screens/feed/Feed";
 import { Groups } from "../screens/groups/Groups";
+import { Map } from "../screens/map/Map";
 
 const Tab = createBottomTabNavigator();
 
@@ -32,7 +33,7 @@ export const Tabs = () => {
       />
       <Tab.Screen
         name="Map"
-        component={Feed}
+        component={Map}
         options={{
           tabBarIcon: () => <FontAwesomeIcon icon={faMap} size={27} />,
         }}
