@@ -4,7 +4,7 @@ import { styles } from "./styles";
 export const Groups = ({ groupName }) => {
   return (
     <View style={styles.container}>
-      <TopNav buttons={['inviteFriend', 'search']} />
+      <TopNav buttons={['search', 'inviteFriend']} />
       <View style={styles.mainContent}>
         <Text style={styles.title}>{groupName}</Text>
       </View>

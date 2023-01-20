@@ -10,9 +10,17 @@ export const styles = StyleSheet.create({
     width: windowWidth,
     padding: 5,
     flexDirection: "row",
-    backgroundColor: '#fff'
+    backgroundColor: "#fff",
   },
   topButton: {
     marginRight: 30,
+  },
+  logo: {
+    flex: 2,
+  },
+  buttons: {
+    width: 230,
+    flexDirection: "row-reverse",
+    justifyContent: 'space-between'
   },
 });

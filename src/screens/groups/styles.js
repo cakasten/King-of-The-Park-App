@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   mainContent: {
     flex: 1,
     alignItems: "center",
-    backgroundColor: "red",
+    backgroundColor: "#ff6688",
   },
   title: {
     fontSize: 25,

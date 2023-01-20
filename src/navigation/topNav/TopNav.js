@@ -8,8 +8,8 @@ import { Logo } from "../../components/logo/Logo";
 export const TopNav = ({ buttons }) => {
   return (
     <View style={styles.topNav}>
-      <Logo size={"small"} />
-      <View style={{ flexDirection: "row", alignItems: "center" }}>
+      <Logo size={"small"} style={styles.logo} />
+      <View style={styles.buttons}>
         {buttons.map((element) => {
           switch (element) {
             case "search":
